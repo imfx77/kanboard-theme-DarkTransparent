@@ -48,7 +48,7 @@ body {
             rgba(0, 0, 0, 0.7), 
             rgba(0, 0, 0, 0.7)
             ),
-            url("https://picsum.photos/1920/1080?grayscale&blur=2");
+            url("https://picsum.photos/1080/1920?grayscale&blur=2");
         }
 }
 code {
