@@ -2,7 +2,7 @@
  * DarkTransparent - Theme for Kanboard
  * Licensed under the MIT license - DarkTransparent/LICENSE
  * https://github.com/imfx77/kanboard-theme-DarkTransparent
- * Copyright (c) 2024 Im[F(x)]
+ * Copyright (c) 2026 Im[F(x)]
  */
 
 /*!
@@ -19,10 +19,107 @@
  * Copyright (c) 2018 Valentino Pesce - https://iltuobrand.it
  */
 
- h1, li, ul, ol, table, tr, td, th, p, blockquote, body {
-    margin: 0;
-    padding: 0;
-    font-size: 100%;
+:root {
+    --body-background-color:#222;
+    --header-background-color:#222;
+    --color-primary:#a0a0a0;
+    --color-light:#a0a0a0;
+    --color-lighter:#efefef;
+    --color-dark:#000;
+    --color-medium:#4f4c4c;
+    --color-error:#b94a48;
+    --link-color-primary:#aaa;
+    --link-color-focus:#ddd;
+    --link-color-hover:#ddd;
+    --alert-color-default:#efefef;
+    --alert-color-success:#def6de;
+    --alert-color-error:#de9393;
+    --alert-color-info:#3a87ad;
+    --alert-color-normal:#333;
+    --alert-background-color-default:#333;
+    --alert-background-color-success:#304b27;
+    --alert-background-color-error:#500606;
+    --alert-background-color-info:#d9edf7;
+    --alert-background-color-normal:#f0f0f0;
+    --alert-border-color-default:#444;
+    --alert-border-color-success:#3c621b;
+    --alert-border-color-error:#7e0315;
+    --alert-border-color-info:#bce8f1;
+    --alert-border-color-normal:#ddd;
+    --button-default-color:#333;
+    --button-default-background-color:#f5f5f5;
+    --button-default-border-color:#ddd;
+    --button-default-color-focus:#000;
+    --button-default-background-color-focus:#fafafa;
+    --button-default-border-color-focus:#bbb;
+    --button-primary-color:#efefef;
+    --button-primary-background-color:#333;
+    --button-primary-border-color:#444;
+    --button-primary-color-focus:#fff;
+    --button-primary-background-color-focus:#555;
+    --button-primary-border-color-focus:#888;
+    --button-danger-color:#fff;
+    --button-danger-background-color:#d14836;
+    --button-danger-border-color:#b0281a;
+    --button-danger-color-focus:#fff;
+    --button-danger-background-color-focus:#c53727;
+    --button-danger-border-color-focus:#b0281a;
+    --button-disabled-color:#ccc;
+    --button-disabled-background-color:#f7f7f7;
+    --button-disabled-border-color:#ccc;
+    --table-header-background-color:#1a1a1a;
+    --table-nth-background-color:#2d2c2c;
+    --table-border-color:rgba(147,128,108,.25);
+    --avatar-color-letter:#fff;
+    --activity-title-color:#e3e2e2;
+    --activity-title-border-color:#efefef;
+    --activity-event-background-color:#313131;
+    --activity-event-hover-color:#000;
+    --user-mention-color:#fff;
+    --board-task-limit-color:#DF5353;
+    --table-list-header-border-color:rgba(147,128,108,.25);
+    --table-list-header-background-color:rgb(59,59,59);
+    --table-list-nth-background-color:#2d2c2c;
+    --table-list-border-color:rgba(147,128,108,.25);
+    --table-list-row-hover-border-color:rgba(147,128,108,.25);
+    --table-list-row-background-color:#434343;
+    --sidebar-border-color:rgba(147,128,108,.25);
+    --dropdown-background-color:#222;
+    --dropdown-border-color:#000;
+    --dropdown-li-border-color:#555;
+    --input-addon-background-color:#1a1a1a;
+    --input-addon-color:rgba(147,128,108,.25);
+    --views-background-color:#1a1a1a;
+    --views-border-color:rgba(147,128,108,.25);
+    --views-active-color:#949494;
+    --input-focus-color:#e6edf3;
+    --input-focus-border-color:rgba(82,168,236,.8);
+    --input-focus-shadow-color:rgba(82,168,236,.6);
+    --input-background-color:rgb(59,59,59);
+    --input-border-color:#777575;
+    --input-placeholder-color:#666;
+    --tooltip-background-color:#333;
+    --tooltip-border-color:#555;
+    --tooltip-shadow-color:#111;
+    --panel-background-color:#2c2c2c;
+    --panel-border-color:#000;
+    --draggable-item-selected-background-color:#222;
+    --draggable-item-selected-border-color:#111;
+    --draggable-item-hover-background-color:#555;
+    --draggable-row-handle-color:#444;
+    --draggable-placeholder-background-color:#444;
+    --draggable-placeholder-border-color:#666;
+    --task-list-icons-color:#ccc;
+    --form-help-color:#a8a12f;
+    --form-error-color:#f2332f;
+    --comment-title-border-color:#eee;
+    --comment-nth-background-color:#2b2a2a;
+    --comment-highlighted-background-color:#2b2901;
+    --comment-highlighted-hover-background-color:#000;
+    --comment-highlighted-border-color:#c09e05
+}
+html {
+    color-scheme:dark
 }
 body {
     padding-bottom: 10px;
@@ -50,6 +147,11 @@ body {
             ),
             url("https://picsum.photos/1080/1920?grayscale&blur=2");
         }
+}
+h1, li, ul, ol, table, tr, td, th, p, blockquote, body {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
 }
 code {
     background-color: rgba(36,39,41,0.75)!important;
@@ -1874,6 +1976,7 @@ a i.web-notification-icon:focus,a i.web-notification-icon:hover {
 }
 #board-container {
     overflow-x:auto;
+    clear: both;
 }
 #board {
     table-layout:fixed;
